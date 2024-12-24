@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react"
 import { View, Alert } from "react-native"
-
-import { api } from "./services/api"
-
+import { api } from "src/app/services/api"
 import { Categories, CategoriesProps } from "./components/categories"
 
+  
 export default function Home() {
     const [categories, setCategories] = useState<CategoriesProps>([])
 
